@@ -1,9 +1,10 @@
 <li>
 <div class="dropdown"><a class="current-open dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="glyphicon glyphicon-user"></span><span><?php echo " ".$_SESSION['name']." "; ?></span><span class="caret" style="padding-bottom: 4px;"></span></a>
-<ul class="dropdown-menu" style="float: none;">
-    <li><a href="#" style="text-decoration-color: #000; float: none;">HTML</a></li>
-    <li><a href="#" style="text-decoration-color: #000; float: none;">CSS</a></li>
-    <li><a href="#" style="text-decoration-color: #000; float: none;">JavaScript</a></li>
+<ul class="dropdown-menu" style="float: none; padding-top: 20px; background-color: #0fbaa9;">
+    <li><a href="orders.php"> My Orders</a></li>
+    <li><a href="settings.php">Settings</a></li>
+    <li class="divider"></li>
+    <li><a href="logout.php">Logout</a></li>
 </ul>
 </div>
 </li>

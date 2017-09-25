@@ -75,31 +75,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <div class="banner page-head">
 	<div class="header">	
-			<div class="logo">
-			   <h1><a href="index.html"><i><img src="images/cell.png" alt=" " /></i>Easy Recharge</a></h1>
-			</div>
-			<div class="top-nav">
-				<span class="menu"><img src="images/menu.png" alt=" " /></span>
-				<ul class="nav1">
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Mobile</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal2">datacard</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">DTH</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal3">landline</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal4">login</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal5">Signup</a></li>
-				</ul>
-						<!-- script-for-menu -->
-						 <script>
-						   $( "span.menu" ).click(function() {
-							 $( "ul.nav1" ).slideToggle( 300, function() {
-							 // Animation complete.
-							  });
-							 });
-						</script>
-						<!-- /script-for-menu -->
-			</div>
+			<?php 
+				include('header.php');
+			?>
 			<!-- start search-->
-				    <div class="search-box">
+				    <!-- <di vclass="search-box">
 					    <div id="sb-search" class="sb-search">
 							<form>
 								<input class="sb-search-input" placeholder="Enter your search item..." type="search" name="search" id="search">
@@ -107,7 +87,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<span class="sb-icon-search"> </span>
 							</form>
 						</div>
-				    </div>
+				    </div> -->
 					<!-- search-scripts -->
 					<script src="js/classie.js"></script>
 					<script src="js/uisearch.js"></script>
@@ -115,7 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							new UISearch( document.getElementById( 'sb-search' ) );
 						</script>
 				<!-- //search-scripts -->
-				
+			
 			
 			<div class="clearfix"> </div>
 	</div>

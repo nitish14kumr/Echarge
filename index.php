@@ -222,7 +222,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="footer">
 	<div class="container">
 		<h2><a href="index.html">Easy Recharge</a></h2>
-		<p>© 2016 Easy Recharge. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+		<p>© 2017 Easy Recharge. All Rights Reserved</p>
 		<ul>
 			<li><a class="face1" href="#"></a></li>
 			<li><a class="face2"href="#"></a></li>
