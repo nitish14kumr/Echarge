@@ -69,30 +69,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <div class="banner">
 	<div class="header">	
-			<div class="logo">
-			   <h1><a href="index.html"><i><img src="images/cell.png" alt=" " /></i>Easy Recharge</a></h1>
-			</div>
-			<div class="top-nav">
-				<span class="menu"><img src="images/menu.png" alt=" " /></span>
-				<ul class="nav1">
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Mobile</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal2">datacard</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">DTH</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal3">landline</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal4">login/Register</a></li>
-				</ul>
-						<!-- script-for-menu -->
-						 <script>
-						   $( "span.menu" ).click(function() {
-							 $( "ul.nav1" ).slideToggle( 300, function() {
-							 // Animation complete.
-							  });
-							 });
-						</script>
-						<!-- /script-for-menu -->
-			</div>
+			<?php 
+				include('header.php');
+			?>
 			<!-- start search-->
-				    <!-- <div class="search-box">
+				    <!-- <di vclass="search-box">
 					    <div id="sb-search" class="sb-search">
 							<form>
 								<input class="sb-search-input" placeholder="Enter your search item..." type="search" name="search" id="search">
@@ -797,27 +778,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
 											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
 										</ul> -->
-										<form>
+										<form method="post" action="db\add_user.php">
 											<h3>Create your account </h3>
-											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<input type="text" name="name" value="Name" onfocus="if (this.value == 'Name') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+											<input type="text" name="mobile" value="Mobile number" onfocus="if (this.value == 'Mobile number') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+											<input type="text" name="email" value="Email id" onfocus="if (this.value == 'Email id') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
+											<input type="password" name="password" value="Password" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											
 											<input type="submit" value="CREATE ACCOUNT" >
 										</form>
 									</div>
 									<div class="login-right">
-										<form>
+										<form method="post" action="db\user_login.php">
 											<h3>Sign In with your account </h3>
-											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<input type="text" name="user" value="Enter your mobile number or Email" onfocus="if (this.value == 'Enter your mobile number or Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+											<input type="password" name="pass" value="Password" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											<h4><a href="#">Forgot password</a> / <a href="#">Create new password</a></h4>
 											<div class="single-bottom">
 												<input type="checkbox"  id="brand" value="">
 												<label for="brand"><span></span>Remember Me.</label>
 											</div>
-											<input type="submit" value="SIGNIN" >
+											<input type="submit" value="SIGN IN" >
 										</form>
 									</div>
 									<div class="clearfix"></div>								
